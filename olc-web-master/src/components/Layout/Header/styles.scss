@@ -1,0 +1,146 @@
+@import "../../../styles/mixins";
+
+.headerWrapper {
+  background-color: rgba(237, 92, 47, 0.75) !important; /* 50% transparency */
+  height: 100% !important;
+  max-height: 113px !important;
+  justify-content: center !important;
+  box-shadow: none !important;
+
+
+
+  .toolBarWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @media (max-width: 991px) {
+      justify-content: flex-start;
+    }
+  }
+
+  .hamburgerIcon {
+    display: none;
+    @media (max-width: 991px) {
+      display: block;
+      position: absolute;
+      right: 20px;
+    }
+  }
+
+  .OLCLogo {
+    display: block;
+    // @media (max-width: 991px) {
+    //   display: none;
+    // }
+  }
+
+  .listBtnsWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 65px;
+    flex-wrap: wrap;
+
+    @media (max-width: 1099px) {
+      gap: 20px;
+    }
+
+    .listWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+
+      @media (max-width: 1099px) {
+        gap: 20px;
+      }
+
+      @media (max-width: 991px) {
+        display: none;
+      }
+
+      .listButtons {
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        text-transform: capitalize;
+        border: none;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+          background-color: transparent;
+          border-bottom: 2px solid #fff;
+        }
+
+        &:focus {
+          border-color: transparent;
+          outline: none;
+        }
+      }
+
+      .listButtonActive {
+        border-bottom: 2px solid #fff;
+        font-weight: 600;
+      }
+    }
+
+    .headerBtnsWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 11px;
+      @media (max-width: 991px) {
+        display: none;
+      }
+      a {
+        text-decoration: none !important;
+      }
+    }
+  }
+}
+
+.hambergerDrawer {
+  @media (max-width: 991px) {
+    display: block !important;
+  }
+
+  .mobileMenu {
+    .mobileList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      .listButtons {
+        text-decoration: none;
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        text-transform: capitalize;
+        border: none;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+          background-color: transparent;
+          border-bottom: 2px solid #000;
+        }
+
+        &:focus {
+          border-color: transparent;
+          outline: none;
+        }
+      }
+    }
+  }
+}

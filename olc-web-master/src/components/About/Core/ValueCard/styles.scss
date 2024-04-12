@@ -1,0 +1,49 @@
+.valueCardWrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 413px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid #fbb332;
+  background-color: #ffffff;
+  border-radius: 10px;
+  gap: 28px;
+  margin-bottom: 125px;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    max-width: 319px;
+    margin-bottom: 54px;
+  }
+
+  @media (max-width: 576px) {
+    min-height: 331px;
+    padding: 50px 36px !important;
+    max-width: auto !important;
+    min-width: 209px !important;
+  }
+
+  .valueCardContent {
+    h4 {
+      font-family: Inter;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    p {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: left;
+      width: 100%;
+    }
+  }
+}

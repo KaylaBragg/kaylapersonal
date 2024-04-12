@@ -1,0 +1,81 @@
+name: Build and Deploy to S3
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send Deployment Started Notification
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          payload: |
+            {
+              "text": ":red_circle: Web Deployment on Demo Environment Started",
+              "blocks": [
+                {
+                    "type": "section",
+                    "text": { "type": "mrkdwn", "text": ":red_circle: :red_circle: *Web* Deployment on *Demo Environment* Started :red_circle: :red_circle:" }
+                },
+                {
+                  "type": "context",
+                  "elements": [
+                    { "type": "mrkdwn", "text": ":male-factory-worker: *Started By:* ${{ github.event.pusher.name }}" }
+                  ]
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Copy Build to S3
+        run: aws s3 sync --delete public/ s3://web.openletterconnect.com
+      
+      - name: Send Deployment Completed Notification
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          payload: |
+            {
+              "text": ":large_green_circle: Web Deployment on Demo Environment Completed",
+              "blocks": [
+                {
+                    "type": "section",
+                    "text": { "type": "mrkdwn", "text": ":large_green_circle: :large_green_circle: *Web* Deployment on *Demo Environment* Completed :large_green_circle: :large_green_circle:" }
+                },
+                {
+                  "type": "context",
+                  "elements": [
+                    { "type": "mrkdwn", "text": ":male-factory-worker: *Started By:* ${{ github.event.pusher.name }}" }
+                  ]
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK

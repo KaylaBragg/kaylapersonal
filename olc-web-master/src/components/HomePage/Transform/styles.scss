@@ -1,0 +1,138 @@
+.transFormContainer {
+  margin: 0 0 100px 0;
+  @media (max-width: 576px) {
+    margin: 40px 0 35px 0;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .transformWrapper {
+    background-image: url(../../../assets/images/transform/strategy.svg);
+    background-size: contain;
+    height: 100%;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    width: 100%;
+    max-width: 1421px;
+    margin: 0 auto;
+
+    @media (max-width: 576px) {
+      background-size: cover;
+      background-position: top;
+      min-height: 400px;
+      background-position-x: -250px;
+      justify-content: flex-end;
+    }
+
+    h3 {
+      color: #000;
+      text-align: center;
+      font-family: Inter;
+      font-size: 70px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 70px;
+      width: 100%;
+      max-width: 678px;
+      margin: 0 auto;
+      @media (max-width: 576px) {
+        font-size: 36px;
+        line-height: 40px;
+      }
+
+      span {
+        background: linear-gradient(
+          90deg,
+          #ed5c2f 9.52%,
+          #f28230 49.61%,
+          #fab331 88.07%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Inter;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 70px;
+        @media (max-width: 576px) {
+          font-size: 36px;
+          line-height: 40px;
+        }
+      }
+    }
+
+    p {
+      color: #000;
+      text-align: center;
+      font-family: Inter;
+      font-size: 28px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 45px;
+      width: 100%;
+      max-width: 881px;
+      margin: 0 auto;
+      @media (max-width: 576px) {
+        font-size: 17px;
+        line-height: 24px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .offeringsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    gap: 15px;
+
+    p {
+      color: #000;
+      font-family: Inter;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 45px;
+      width: 100%;
+      max-width: 534px;
+      transition: 0.1s ease-in all;
+      cursor: default;
+
+      @media (max-width: 576px) {
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      &:first-child {
+        margin-bottom: 34px;
+      }
+
+      &:last-child {
+        width: 100%;
+        max-width: 512px;
+      }
+
+      &:hover {
+        background: var(
+          --Linear,
+          linear-gradient(90deg, #ed5c2f 0%, #f28230 51.04%, #fab331 100%)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}

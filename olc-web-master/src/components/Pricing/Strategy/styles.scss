@@ -1,0 +1,56 @@
+@import "../../../styles/mixins";
+
+.strategyWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f282301a;
+  padding: 82px 0px 102px;
+  margin-top: 90px;
+  @media (max-width: 575px) {
+    padding: 49px 0px 60px;
+  }
+  .strategyContent {
+    h4 {
+      font-family: Raleway;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 70px;
+      letter-spacing: 0px;
+      text-align: center;
+      span {
+        @include spanText;
+      }
+      @media (max-width: 575px) {
+        font-size: 30px;
+        line-height: 35px;
+        width: 100%;
+        max-width: 287px;
+        margin: 0 auto;
+      }
+    }
+    p {
+      font-family: Raleway;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: center;
+      @media (max-width: 575px) {
+        width: 100%;
+        max-width: 308px;
+        margin: 0 auto;
+      }
+    }
+
+    .strategyBtns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+  }
+}

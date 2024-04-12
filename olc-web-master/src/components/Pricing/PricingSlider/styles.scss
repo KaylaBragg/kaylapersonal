@@ -1,0 +1,199 @@
+// slider
+.featureMobileBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #f28230;
+    text-transform: capitalize;
+    width: 100%;
+    max-width: 308px;
+    height: 100%;
+    min-height: 60px;
+    border: 2px solid #f28230;
+    border-radius: 200px;
+    svg {
+      font-size: 35px;
+    }
+  }
+}
+
+.pricingSlider {
+  .pricingSlide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .slideHead {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin: 30px 0px;
+    }
+    .pricingSliderPaper {
+      margin-bottom: 65px;
+      border: 1.5px solid #ed5c2f;
+      border-radius: 9px;
+      @media (max-width: 768px) {
+        width: 95%;
+        margin-bottom: 17px;
+      }
+
+      .pricingSliderWrapper {
+        box-shadow: none !important;
+        min-width: 0 !important;
+        thead {
+          background: linear-gradient(to right, #ed5c2f, #f28230, #fab331);
+          tr {
+            th {
+              cursor: pointer;
+              .tableTitle {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                  font-family: Inter;
+                  font-size: 18px;
+                  font-weight: 700;
+                  line-height: 30px;
+                  letter-spacing: 0em;
+                  text-align: left;
+                  color: #fff;
+
+                  &:first-child {
+                    text-align: left !important;
+                  }
+                  text-align: center !important;
+                }
+                svg {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            th {
+              border: 1.5px solid #ed5c2f;
+              border-left: none !important;
+              border-bottom: none !important;
+              .slideTableRow {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                  &:last-child {
+                    width: 100%;
+                    max-width: 75px;
+                    text-align: center;
+                  }
+                }
+              }
+              p {
+                &:first-child {
+                  font-family: Inter;
+                  font-size: 16px;
+                  line-height: 30px;
+                  letter-spacing: 0em;
+                  text-align: left;
+                  font-weight: 700;
+                }
+                font-family: Inter;
+                font-size: 16px;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: left;
+                font-weight: 500;
+              }
+              @media (max-width: 768px) {
+                border-right: none !important;
+              }
+            }
+            td {
+              border: 1.5px solid #ed5c2f;
+              text-align: center !important;
+              border-bottom: none !important;
+              p {
+                font-family: Inter;
+                font-size: 16px;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: left;
+                font-weight: 500;
+              }
+
+              &:last-child {
+                border-right: none !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slick-list {
+    .slick-track {
+      .slick-slide {
+        float: inline-end !important;
+      }
+    }
+  }
+
+  .slick-prev {
+    left: 20px !important;
+    top: 50px !important;
+    border: 1px solid #f28230;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    z-index: 999;
+
+    svg {
+      color: #f28230 !important;
+      font-size: 40px !important;
+    }
+
+    &::before {
+      display: none !important;
+    }
+  }
+
+  .slick-next {
+    right: 20px !important;
+    top: 50px !important;
+    border: 1px solid #f28230;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    z-index: 999;
+
+    svg {
+      color: #f28230 !important;
+      font-size: 40px !important;
+    }
+
+    &::before {
+      display: none !important;
+    }
+  }
+
+  .slick-disabled {
+    opacity: 0.5;
+  }
+}
+
+.togglePricing {
+  display: none;
+}

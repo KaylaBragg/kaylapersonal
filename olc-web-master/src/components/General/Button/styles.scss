@@ -1,0 +1,16 @@
+@import "../../../styles/mixins";
+
+.genericButton {
+  @include genericButtonStyles; // Apply generic button styles
+  // Any other specific styles for .genericButton
+}
+a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  .genericButton {
+    @include genericButtonStyles;
+    font-weight: 600 !important;
+    line-height: 28px !important;
+  }
+}

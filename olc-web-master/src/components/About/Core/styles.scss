@@ -1,0 +1,74 @@
+@import "../../../styles/mixins";
+
+.coreHeading {
+  padding-top: 70px;
+  margin: 0px 0px 62px;
+  @media (max-width: 576px) {
+    margin: 0px 0px 31px;
+    padding-top: 30px;
+  }
+  p {
+    @include spanTextTwo;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    @media (max-width: 576px) {
+      font-size: 22px;
+    }
+  }
+  h2 {
+    font-family: Inter;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 0;
+    @media (max-width: 576px) {
+      font-size: 35px;
+      line-height: 38px;
+      width: "100%";
+      max-width: 297px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.coreCardsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 27px;
+  flex-wrap: wrap;
+}
+
+.coreSlider {
+  margin-bottom: 30px;
+  .slick-dots {
+    bottom: 5px !important;
+    li {
+      button {
+        &::before {
+          width: 6px !important;
+          height: 6px !important;
+          line-height: 12px !important;
+          border-radius: 50% !important;
+          font-size: 9px !important;
+        }
+      }
+    }
+    .slick-active {
+      button {
+        &::before {
+          content: " " !important;
+          border: 2px solid #ed5c2f !important;
+        }
+      }
+    }
+  }
+}

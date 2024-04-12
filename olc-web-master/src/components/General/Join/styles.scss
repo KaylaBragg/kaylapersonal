@@ -1,0 +1,87 @@
+.joinWrapper {
+  background-image: url(../../../assets/images/products/bg-join.svg);
+  height: 100%;
+  min-height: 350px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 0;
+
+  @media (max-width: 992px) {
+    background-size: cover !important;
+    border-radius: 20px !important;
+    margin-bottom: 20px !important;
+    padding: 20px !important;
+  }
+
+  @media (max-width: 576px) {
+    background-image: url(../../../assets/images/about/join-mobile-bg.svg);
+    background-size: contain !important;
+    min-height: 715px;
+    margin: 46px auto 40px !important;
+    padding: 50px 38px !important;
+    width: 100%;
+    max-width: 271px;
+  }
+
+  h2 {
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    width: 100%;
+    max-width: 547px;
+  }
+  p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+    margin: 0;
+    width: 100%;
+  }
+  h6 {
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+  }
+}
+
+.aboutJoinWrapper {
+  background-image: url(../../../assets/images/about/about-join-bg.svg);
+  justify-content: flex-start;
+
+  h2 {
+    line-height: 70px;
+    @media (max-width: 576px) {
+      line-height: 40px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    background-image: url(../../../assets/images/about/join-mobile-bg.svg);
+    min-height: 715px;
+    margin: 46px auto 50px;
+    padding: 50px 38px;
+    width: 100%;
+    max-width: 271px;
+    justify-content: center;
+  }
+}

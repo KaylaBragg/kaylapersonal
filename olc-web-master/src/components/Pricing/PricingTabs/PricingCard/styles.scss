@@ -1,0 +1,158 @@
+.pricingCardWrapper {
+  background-color: #fff;
+  width: 100%;
+  max-width: 310px;
+  height: 100%;
+  min-height: 647px;
+  border-radius: 18px;
+  position: relative;
+
+  .packageSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+    min-height: 260px;
+    border-bottom: 1.5px solid #e1e1e1;
+    p {
+      font-family: Inter;
+      letter-spacing: 0.03em;
+      text-align: center;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 26px;
+      margin-top: 68px;
+    }
+
+    h4 {
+      font-family: Inter;
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 41px;
+      letter-spacing: 0em;
+      text-align: center;
+      span {
+        font-size: 18px;
+        line-height: 21px;
+        color: #737373;
+      }
+    }
+
+    .nonActive {
+      border: 2px solid #f28230;
+      font-family: Inter;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #f28230;
+      text-transform: none;
+      border-radius: 300px;
+      width: 100%;
+      max-width: 250px;
+      height: 100%;
+      min-height: 50px;
+      margin-bottom: 21px;
+    }
+
+    .active {
+      color: #fff;
+      border: none;
+      background: linear-gradient(to right, #ed5c2f, #f28230, #fab331);
+    }
+
+    .salesBtn {
+      color: #000000;
+      border: 2px solid #000000;
+    }
+  }
+
+  .featureSection {
+    padding: 37px 15px 0 32px;
+    h4 {
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .featureList {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      .featureItem {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        p {
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 25px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .supportSection {
+    padding: 10px 32px 0;
+    h4 {
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .featureList {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      .featureItem {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        p {
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 25px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.popular {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    padding: 3px;
+    background: linear-gradient(0deg, #ed5c2f, #fab332);
+    -webkit-mask: linear-gradient(rgba(255, 255, 255, 1.929412) 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  &::after {
+    position: absolute;
+    content: url(../../../../assets/images/pricing/recommend.svg);
+    top: 0;
+    right: 0;
+  }
+}

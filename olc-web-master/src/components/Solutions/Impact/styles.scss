@@ -1,0 +1,120 @@
+.impactHeading {
+  margin: 120px auto 50px;
+  width: 100%;
+  max-width: 670px;
+
+  @media (max-width: 575px) {
+    margin: 68px auto 43px;
+  }
+
+  h2 {
+    font-family: Inter;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0px;
+    text-align: center;
+    span {
+      background: linear-gradient(
+        90deg,
+        #ed5c2f 0%,
+        #f28230 17.67%,
+        #fab331 34.62%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 35px;
+    }
+  }
+}
+
+.impactWapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+
+  @media (max-width: 992px) {
+    flex-direction: column-reverse;
+  }
+
+  @media (max-width: 575px) {
+    gap: 50px;
+  }
+
+  .impactAccordionWrapper {
+    flex: 1;
+    @media (max-width: 992px) {
+      flex: auto;
+    }
+
+    .accordionMain {
+      border-radius: 0px;
+      box-shadow: none !important;
+
+      &::before {
+        display: none;
+      }
+
+      .accordionSummary {
+        border-bottom: 2px solid #e1e1e1;
+        padding: 20px 10px !important;
+
+        .MuiAccordionSummary-content {
+          margin: 0 !important;
+        }
+
+        p {
+          color: #000;
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+
+      .accordionDetails {
+        padding: 10px 0px 10px 10px !important;
+        @media (max-width: 576px) {
+          padding: 8px 16px 16px !important;
+        }
+
+        p {
+          color: #000;
+          font-family: Inter;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+          text-align: left;
+          @media (max-width: 576px) {
+            width: 100%;
+            max-width: 300px;
+          }
+        }
+      }
+    }
+  }
+  .impactAccordionImage {
+    flex: 1;
+    img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+    }
+    @media (max-width: 992px) {
+      flex: auto;
+    }
+    @media (max-width: 576px) {
+      padding: 0 20px;
+    }
+  }
+}

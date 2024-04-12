@@ -1,0 +1,76 @@
+.tabsWrapper {
+  .tabsButtonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff33;
+    width: 100%;
+    max-width: 210px;
+    height: 100%;
+    min-height: 36px;
+    margin: 0 auto;
+    border-radius: 200px;
+    padding: 6px 11px;
+    gap: 27px;
+    margin-bottom: 25px;
+    position: relative;
+    @media (max-width: 600px) {
+      margin-bottom: 75px;
+    }
+
+    &::after {
+      content: "Get 2 Months Free";
+      position: absolute;
+      top: 8px;
+      right: -170px;
+      background-color: #292929;
+      width: 157px;
+      height: 36px;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Inter;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: center;
+      border-radius: 4px;
+      @media (max-width: 600px) {
+        right: 0;
+        left: 0;
+        transform: translate(30%, 50%);
+        top: 50px;
+      }
+    }
+    .nonActive {
+      color: #ffffff;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    .active {
+      color: #303030;
+      width: 100%;
+      max-width: 113px;
+      height: 100%;
+      max-height: 36px;
+      background-color: #ffffff;
+      border-radius: 200px;
+    }
+  }
+}
+.pricingCardsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+}

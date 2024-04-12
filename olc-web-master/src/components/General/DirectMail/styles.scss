@@ -1,0 +1,46 @@
+.directMailHeading {
+  width: 100%;
+
+  @media (max-width: 576px) {
+    margin: 50px 0px;
+  }
+
+  h3 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    @media (max-width: 576px) {
+      font-size: 35px;
+      line-height: 35px;
+    }
+  }
+}
+
+.directMailSlider {
+  .slick-dots {
+    bottom: -35px !important;
+    li {
+      button {
+        &::before {
+          width: 6px !important;
+          height: 6px !important;
+          line-height: 12px !important;
+          border-radius: 50% !important;
+          font-size: 9px !important;
+        }
+      }
+    }
+    .slick-active {
+      button {
+        &::before {
+          content: " " !important;
+          border: 2px solid #ed5c2f !important;
+        }
+      }
+    }
+  }
+}

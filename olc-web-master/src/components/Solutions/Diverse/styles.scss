@@ -1,0 +1,44 @@
+.diverseHeading {
+  width: 100%;
+  max-width: 529px;
+  margin: 0 auto 65px;
+  padding-top: 100px;
+
+  @media (max-width: 575px) {
+    margin: 0 auto 30px;
+    padding-top: 50px;
+    max-width: 297px;
+  }
+
+  h2 {
+    font-family: Inter;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0px;
+    text-align: center;
+    span {
+      background: linear-gradient(
+        90deg,
+        #ed5c2f 0%,
+        #f28230 51.04%,
+        #fab331 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 35px;
+    }
+  }
+}
+
+.diverseCardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+  flex-wrap: wrap;
+}

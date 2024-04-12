@@ -1,0 +1,53 @@
+.tabbingWrapper {
+  margin-bottom: 50px;
+  @media (max-width: 768px) {
+    margin-bottom: 0px;
+  }
+  .tabbingHeader {
+    font-family: Inter;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 50px 0 30px;
+    @media (max-width: 576px) {
+      font-size: 30px;
+      line-height: 35px;
+      width: 100%;
+      max-width: 235px;
+      margin: 50px auto 30px;
+    }
+  }
+  .tabList {
+    .MuiTabs-scroller {
+      .MuiTabs-flexContainer {
+        justify-content: space-between !important;
+      }
+      .tabLabel {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #444241;
+      }
+      .Mui-selected {
+        color: #f28230 !important;
+      }
+    }
+  }
+
+  .MuiTabs-indicator {
+    background-color: #f28230 !important;
+  }
+
+  .tabPanelFeatures {
+    padding: 80px 85px 18px !important;
+    @media (max-width: 576px) {
+      padding: 18px !important;
+    }
+  }
+}

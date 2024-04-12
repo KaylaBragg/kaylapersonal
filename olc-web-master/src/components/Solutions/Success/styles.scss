@@ -1,0 +1,102 @@
+.successImageWrapper {
+  span {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.successWrapper {
+  position: relative;
+  padding-top: 20px;
+
+  &::before {
+    position: absolute;
+    content: url("../../../assets/images/solutions/mail-success.svg");
+    top: 0%;
+    bottom: 50%;
+    transform: translate(-50%, -120%);
+    z-index: -1;
+    @media (max-width: 576px) {
+      content: url("../../../assets/images/solutions/direct-mail-mobile.svg");
+      top: 0%;
+      bottom: 0%;
+      transform: translate(0%, -95%);
+    }
+  }
+  h6 {
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 0;
+  }
+  h2 {
+    font-family: Raleway;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    max-width: 460px;
+    @media (max-width: 575px) {
+      font-size: 33px;
+      line-height: 35px;
+      margin-bottom: 25px;
+    }
+  }
+  p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.customizedCTA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px 0;
+  gap: 25px;
+
+  @media (max-width: 992px) {
+    padding: 58px 0px 93px;
+  }
+
+  p {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 0;
+    color: #000000;
+    width: 100%;
+    max-width: 809px;
+
+    span {
+      background: linear-gradient(
+        90deg,
+        #ed5c2f 0%,
+        #f28230 51.04%,
+        #fab331 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "open-letter-connect",
+  "version": "1.0.0",
+  "private": true,
+  "description": "open-letter-connect",
+  "author": "Husnain.Arshad",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fontsource/inter": "^5.0.16",
+    "@fontsource/raleway": "^5.0.16",
+    "@mui/icons-material": "^5.15.5",
+    "@mui/lab": "^5.0.0-alpha.163",
+    "@mui/material": "^5.15.15",
+    "gatsby": "^5.13.4",
+    "gatsby-plugin-image": "^3.13.0",
+    "gatsby-plugin-manifest": "^5.13.0",
+    "gatsby-plugin-sass": "^6.13.0",
+    "gatsby-plugin-sharp": "^5.13.0",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-sharp": "^5.13.0",
+    "react": "^18.2.0",
+    "react-countup": "^6.5.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-lazy-load-image-component": "^1.6.0",
+    "react-slick": "^0.29.0",
+    "sass": "^1.70.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.8"
+  }
+}

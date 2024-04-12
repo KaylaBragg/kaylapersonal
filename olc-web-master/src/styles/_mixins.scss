@@ -1,0 +1,26 @@
+@mixin genericButtonStyles {
+  text-align: center !important;
+  font-family: Raleway;
+  font-style: normal !important;
+  text-transform: capitalize !important;
+}
+
+@mixin defaultText {
+  text-align: center;
+  font-family: Inter !important;
+  font-style: normal;
+}
+
+@mixin spanText {
+  background: linear-gradient(90deg, #ed5c2f 0%, #f28230 51.04%, #fab331 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin spanTextTwo {
+  background: linear-gradient(90deg, #ed5c2f 35%, #fab331 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
