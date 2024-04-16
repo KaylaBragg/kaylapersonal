@@ -1,0 +1,153 @@
+.scrollerWrapper {
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+
+  @media screen and (max-width: 992px) {
+    margin: 50px 0px;
+  }
+
+  // absolute images positionings
+  .flag {
+    position: absolute;
+    top: -15px;
+    left: 450px;
+    z-index: 1;
+    transform: rotate(346deg);
+
+    @media screen and (max-width: 992px) {
+      left: 150px;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .star {
+    position: absolute;
+    top: -15px;
+    right: 250px;
+    z-index: 1;
+    transform: rotate(356deg);
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .mic {
+    position: absolute;
+    top: 47px;
+    left: 250px;
+    z-index: 1;
+    transform: rotate(350deg);
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .infinteScroller {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-flex;
+    gap: 20px;
+    position: relative;
+    z-index: -1;
+
+    &:hover {
+      .logosSlide {
+        animation-play-state: paused;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        rgb(255, 255, 255),
+        rgba(0, 0, 0, 0.012)
+      );
+      content: "";
+      z-index: 2;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 100%;
+      background: linear-gradient(
+        to left,
+        rgb(255, 255, 255),
+        rgba(0, 0, 0, 0.012)
+      );
+      content: "";
+      z-index: 2;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .logosSlide {
+      display: inline-flex;
+      gap: 20px;
+      transition: 0.1s ease-in all;
+
+      .scrollButton {
+        background: linear-gradient(
+          90deg,
+          #ed5c2f 0%,
+          #f28230 51.04%,
+          #fab331 100%
+        );
+        color: #fff;
+        height: 100%;
+        min-height: 50px;
+        text-transform: capitalize;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+    }
+
+    .animationLeft {
+      animation: slideLeft infinite 30s linear;
+    }
+
+    .animationRight {
+      animation: slideRight infinite 30s linear;
+    }
+
+    @keyframes slideLeft {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    @keyframes slideRight {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  }
+}

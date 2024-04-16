@@ -4,6 +4,11 @@ import Pockets from "../assets/images/trusted/pockets.svg";
 import Estate from "../assets/images/trusted/real-estate.svg";
 import Sell from "../assets/images/trusted/sell.svg";
 import Invelo from "../assets/images/trusted/invelo.svg";
+import GoHighLevel from '../assets/images/trustedcopy/GoHighLevel.png';
+import Hubspot from '../assets/images/trustedcopy/Hubspot.png';
+import Salesforce from "../assets/images/trustedcopy/Salesforce.png";
+import Zapier from "../assets/images/trustedcopy/Zapier.png";
+
 import { Box, Typography } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -60,6 +65,26 @@ const trustedImages = [
     image: Invelo,
   },
 ];
+
+const integrationImages = [
+  {
+    id: 1,
+    image: GoHighLevel,
+  },
+  {
+    id: 2,
+    image: Hubspot,
+  },
+  {
+    id: 3,
+    image: Salesforce,
+  },
+  {
+    id: 4,
+    image: Zapier,
+  },
+];
+
 
 const footerItems = [
   {
@@ -730,6 +755,7 @@ const productsInfo = [
 export {
   navItems,
   trustedImages,
+  integrationImages,
   footerItems,
   faqsData,
   impactData,

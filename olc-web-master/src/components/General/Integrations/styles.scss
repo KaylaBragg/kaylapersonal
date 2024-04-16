@@ -1,0 +1,29 @@
+.integrationsWrapper {
+  font-weight: bold;
+  color: #f28230;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+
+  .featureBox {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #f28230;
+    border-radius: 20px;
+    background-color: rgba(242, 130, 48, 0.1);
+    text-align: center;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    .featureText {
+      font-size: 18px; // Example font size, adjust as needed
+      font-family: 'inter', sans-serif; // Example font family, adjust as needed
+    }
+  }
+}
