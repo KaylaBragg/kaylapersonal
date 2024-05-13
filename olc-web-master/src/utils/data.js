@@ -4,8 +4,8 @@ import Pockets from "../assets/images/trusted/pockets.svg";
 import Estate from "../assets/images/trusted/real-estate.svg";
 import Sell from "../assets/images/trusted/sell.svg";
 import Invelo from "../assets/images/trusted/invelo.svg";
-import GoHighLevel from '../assets/images/trustedcopy/GoHighLevel.png';
-import Hubspot from '../assets/images/trustedcopy/Hubspot.png';
+import GoHighLevel from "../assets/images/trustedcopy/GoHighLevel.png";
+import Hubspot from "../assets/images/trustedcopy/Hubspot.png";
 import Salesforce from "../assets/images/trustedcopy/Salesforce.png";
 import Zapier from "../assets/images/trustedcopy/Zapier.png";
 
@@ -14,6 +14,26 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import Icon from "../assets/images/pricing/pricing-icon.svg";
 import CrossIcon from "../assets/images/pricing/pricing-off.svg";
+
+// team avatars
+import JustinSilverio from "../assets/images/team/justin.webp";
+import KaylaBragg from "../assets/images/team/kayla_bragg.webp";
+import AlexNejezchleba from "../assets/images/team/alex_nejezchleba.webp";
+import CharlieArseniou from "../assets/images/team/charlie_arseniou.webp";
+import GregNavarro from "../assets/images/team/greg_navarro.webp";
+import AlexPadilla from "../assets/images/team/alex_padilla.webp";
+import EvaCuko from "../assets/images/team/eva_cuko.webp";
+import JakeSoper from "../assets/images/team/jake_soper.webp";
+import JackGriffin from "../assets/images/team/jack_griffin.webp";
+import JennBrown from "../assets/images/team/jenn_brown.webp";
+import Adrian from "../assets/images/team/adrian.webp";
+import Lex from "../assets/images/team/lex.webp";
+import Mary from "../assets/images/team/mary.webp";
+import Austin from "../assets/images/team/austin.webp";
+import Shawn from "../assets/images/team/shawn.webp";
+import Rhodney from "../assets/images/team/rhodney.webp";
+import Julius from "../assets/images/team/julius.webp";
+import VictoriaCid from "../assets/images/team/victoria_cid.webp";
 
 const navItems = [
   {
@@ -84,7 +104,6 @@ const integrationImages = [
     image: Zapier,
   },
 ];
-
 
 const footerItems = [
   {
@@ -752,6 +771,99 @@ const productsInfo = [
   ),
 ];
 
+const teamMembers = [
+  {
+    image: JustinSilverio,
+    name: "Justin Silverio",
+    designation: "Founder & CEO",
+  },
+  {
+    image: KaylaBragg,
+    name: "Kayla Bragg",
+    designation: "COO",
+  },
+  {
+    image: AlexNejezchleba,
+    name: "Alex Nejezchleba",
+    designation: "Production Manager",
+  },
+  {
+    image: CharlieArseniou,
+    name: "Charlie Arseniou",
+    designation: "Production Lead",
+  },
+  {
+    image: GregNavarro,
+    name: "Greg Navarro",
+    designation: "Sales Manager",
+  },
+  {
+    image: AlexPadilla,
+    name: "Alex Padilla",
+    designation: "Marketing Manager",
+  },
+  {
+    image: EvaCuko,
+    name: "Eva Cuko",
+    designation: "Marketing Assistant",
+  },
+  {
+    image: JakeSoper,
+    name: "Jake Soper",
+    designation: "CSR",
+  },
+  {
+    image: JackGriffin,
+    name: "Jack Griffin",
+    designation: "CSR",
+  },
+  {
+    image: JennBrown,
+    name: "Jenn Brown",
+    designation: "CSR",
+  },
+  {
+    image: Adrian,
+    name: "Adrian",
+    designation: "CSR",
+  },
+  {
+    image: Lex,
+    name: "Lex",
+    designation: "Prepress Lead",
+  },
+  {
+    image: Mary,
+    name: "Mary",
+    designation: "HR/Admin",
+  },
+  {
+    image: Austin,
+    name: "Austin",
+    designation: "Production Associate",
+  },
+  {
+    image: Shawn,
+    name: "Shawn",
+    designation: "Production Associate",
+  },
+  {
+    image: Rhodney,
+    name: "Rhodney",
+    designation: "Prepress Associate",
+  },
+  {
+    image: Julius,
+    name: "Julius",
+    designation: "Prepress Associate",
+  },
+  {
+    image: VictoriaCid,
+    name: "Victoria Cid",
+    designation: "Prepress Associate",
+  },
+];
+
 export {
   navItems,
   trustedImages,
@@ -763,4 +875,5 @@ export {
   products,
   supportFeatures,
   productsInfo,
+  teamMembers,
 };

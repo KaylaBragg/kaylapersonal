@@ -1,0 +1,113 @@
+@import "../../../styles/mixins";
+@import "../../../index.scss"; // Corrected path assuming 'index.scss' is in the src/ root
+
+.hero-section {
+  font-family: Inter;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h3,
+  h4,
+  p {
+    margin: 0;
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, #ed5c2f, #f28230, #fab331);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .mobile-only {
+    display: block;
+  }
+
+  .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .row {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding: 1.25rem 2.5rem 0;
+
+      .col {
+        height: 100%;
+        text-align: center;
+        width: 100%;
+
+        .about-us {
+          display: inline-block;
+          font-size: 1.25rem;
+          font-weight: 600;
+          line-height: 1.75rem;
+        }
+
+        .title {
+          font-size: 50px;
+          font-weight: 700;
+          line-height: 58px;
+        }
+
+        .desc {
+          color: #444241;
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+        }
+
+        .justin {
+          display: inline-block;
+          font-size: 1.125rem;
+          font-weight: 800;
+          line-height: 1.5rem;
+        }
+
+        .ceo {
+          font-size: 1.125rem;
+          line-height: 1.5rem;
+        }
+
+        .banner-mobile img,
+        &.banner-desktop * {
+          width: 100%;
+        }
+
+        &:nth-child(n + 2) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .mobile-only {
+      display: none;
+    }
+
+    .container .row {
+      flex-direction: row;
+
+      .col {
+        text-align: left;
+        width: 50%;
+
+        .about-us {
+          font-size: 1.375rem;
+        }
+
+        .desc {
+          margin-right: 2.75rem;
+        }
+
+        &:nth-child(n + 2) {
+          display: block;
+          // height: 100%;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
