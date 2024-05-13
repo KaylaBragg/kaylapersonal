@@ -7,7 +7,7 @@ import { Box, Button, Typography } from "@mui/material";
 import "./styles.scss";
 import { StaticImage } from "gatsby-plugin-image";
 
-const PricingCard = () => {
+const PricingCard = ({ plan }) => {
   return (
     <Box className="pricingCardsWrapper">
       {/* first Card */}
@@ -17,7 +17,12 @@ const PricingCard = () => {
             <Typography>Starter</Typography>
             <Typography variant="h4">Free</Typography>
           </Box>
-          <Button className="nonActive">Start for Free!</Button>
+          <Button
+            href="https://app.openletterconnect.com/signup"
+            className="nonActive"
+          >
+            Start for Free!
+          </Button>
         </Box>
         <Box className="featureSection">
           <Typography variant="h4">Product Features</Typography>
@@ -130,10 +135,16 @@ const PricingCard = () => {
           <Box>
             <Typography>Growth</Typography>
             <Typography variant="h4">
-              $99<span>/mo.</span>
+              ${plan === "monthly" ? 99 : 996}
+              <span>/{plan === "monthly" ? "mo" : "yr"}.</span>
             </Typography>
           </Box>
-          <Button className="nonActive active">Get Started</Button>
+          <Button
+            href="https://app.openletterconnect.com/signup"
+            className="nonActive active"
+          >
+            Get Started
+          </Button>
         </Box>
         <Box className="featureSection">
           <Typography variant="h4">Product Features</Typography>
@@ -240,10 +251,16 @@ const PricingCard = () => {
           <Box>
             <Typography>Professional</Typography>
             <Typography variant="h4">
-              $399<span>/mo.</span>
+              ${plan === "monthly" ? 399 : 3996}
+              <span>/{plan === "monthly" ? "mo" : "yr"}.</span>
             </Typography>
           </Box>
-          <Button className="nonActive">Get Started</Button>
+          <Button
+            href="https://app.openletterconnect.com/signup"
+            className="nonActive"
+          >
+            Get Started
+          </Button>
         </Box>
         <Box className="featureSection">
           <Typography variant="h4">Product Features</Typography>
@@ -345,7 +362,12 @@ const PricingCard = () => {
               Enterprise
             </Typography>
           </Box>
-          <Button className="nonActive salesBtn">Contact Sales</Button>
+          <Button
+            href="https://app.openletterconnect.com/signup"
+            className="nonActive salesBtn"
+          >
+            Contact Sales
+          </Button>
         </Box>
         <Box className="featureSection">
           <Typography variant="h4">Product Features</Typography>
