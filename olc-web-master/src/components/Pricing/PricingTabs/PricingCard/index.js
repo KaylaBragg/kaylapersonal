@@ -43,7 +43,7 @@ const PricingCard = ({ plan }) => {
                 src="../../../../assets/images/pricing/pricing-icon.svg"
                 alt="alt-image"
               />
-              <Typography>10 Stored Custom Templates</Typography>
+              <Typography>Unlimited Stored Custom Templates</Typography>
             </Box>
             <Box className="featureItem">
               <StaticImage
@@ -165,7 +165,7 @@ const PricingCard = ({ plan }) => {
                 src="../../../../assets/images/pricing/pricing-icon.svg"
                 alt="alt-image"
               />
-              <Typography>20 Stored Custom Templates</Typography>
+              <Typography>Unlimited Stored Custom Templates</Typography>
             </Box>
             <Box className="featureItem">
               <StaticImage
@@ -179,7 +179,7 @@ const PricingCard = ({ plan }) => {
                 src="../../../../assets/images/pricing/pricing-icon.svg"
                 alt="alt-image"
               />
-              <Typography>10 Tags</Typography>
+              <Typography>20 Tags</Typography>
             </Box>
             <Box className="featureItem">
               <StaticImage
@@ -274,14 +274,14 @@ const PricingCard = ({ plan }) => {
                 src="../../../../assets/images/pricing/pricing-icon.svg"
                 alt="alt-image"
               />
-              <Typography>10 Users</Typography>
+              <Typography>Unlimited Users</Typography>
             </Box>
             <Box className="featureItem">
               <StaticImage
                 src="../../../../assets/images/pricing/pricing-icon.svg"
                 alt="alt-image"
               />
-              <Typography>50 Stored Custom Templates</Typography>
+              <Typography>Unlimited Stored Custom Templates</Typography>
             </Box>
             <Box className="featureItem">
               <StaticImage
@@ -295,7 +295,7 @@ const PricingCard = ({ plan }) => {
                 src="../../../../assets/images/pricing/pricing-icon.svg"
                 alt="alt-image"
               />
-              <Typography>25 Tags</Typography>
+              <Typography>50 Tags</Typography>
             </Box>
             <Box className="featureItem">
               <StaticImage

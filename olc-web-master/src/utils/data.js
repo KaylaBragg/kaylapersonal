@@ -313,7 +313,7 @@ const createData = (name, calories, fat, carbs, protein) => {
 };
 
 const productFeatures = [
-  createData("Users", 1, 3, 10, "Unlimited"),
+  createData("Users", 1, 3, "Unlimited", "Unlimited"),
   createData(
     "Monthly Mailings Limit",
     "Unlimited",
@@ -322,6 +322,21 @@ const productFeatures = [
     "Unlimited"
   ),
   createData("Contacts", "Unlimited", "Unlimited", "Unlimited", "Unlimited"),
+  createData(
+    "Canvas Style Template Editor",
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>
+  ),
   createData("Stored Custom Templates", 10, 20, 50, "Unlimited"),
   createData(
     "API Keys (Test and Live)",
@@ -339,7 +354,7 @@ const productFeatures = [
     </Box>
   ),
   createData("Webhooks", 1, 3, 10, "Unlimited"),
-  createData("Tags", 3, 10, 25, "Unlimited"),
+  createData("Tags", 3, 20, 50, "Unlimited"),
   createData("Custom Fields", 3, 10, 25, "Unlimited"),
   createData(
     "Mailing History",
@@ -555,7 +570,7 @@ const products = [
   createData(
     "Integrations (Zapier/CRM)",
     <Box className="iconWrapper">
-      <img src={CrossIcon} alt="icon" />
+      <img src={Icon} alt="icon" />
     </Box>,
     <Box className="iconWrapper">
       <img src={Icon} alt="icon" />
@@ -570,7 +585,7 @@ const products = [
   createData(
     "Scheduled Mail",
     <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
+      <img src={CrossIcon} alt="icon" />
     </Box>,
     <Box className="iconWrapper">
       <img src={Icon} alt="icon" />

@@ -1,7 +1,6 @@
 @import "../../../styles/mixins";
 @import "../../../index.scss"; // Corrected path assuming 'index.scss' is in the src/ root
 
-
 .heroSectionWrapper {
   width: 100%;
   max-width: 976px;
@@ -23,16 +22,15 @@
     line-height: 70px;
     font-size: 60px; // Default font size
     font-weight: bold; // Updated to 'bold'
-    font-family: 'Inter', sans-serif; // Ensured the font-family is correctly set
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); // Add a shadow to the text
+    font-family: "Inter", sans-serif; // Ensured the font-family is correctly set
     text-align: center;
-    
+
     @media (max-width: 768px) {
       font-size: 40px; // Adjusted for small screens
       line-height: 50px; // Keeping your original line-height for small screens
     }
   }
-  
+
   h4 {
     @include defaultText;
     font-size: 25px;
@@ -104,4 +102,3 @@
     background-position: 0% 50%;
   }
 }
-
