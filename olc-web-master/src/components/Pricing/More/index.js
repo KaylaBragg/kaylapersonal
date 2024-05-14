@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 // MUI Components
 import { Box, Typography } from "@mui/material";
+
+// Contact sales modal
+import DialogContactSales from "../../General/DialogContactSales";
 
 // styles
 import "./styles.scss";
@@ -28,6 +31,7 @@ const buttonStyles = {
 };
 
 const More = () => {
+  const [open, setOpen] = useState(false);
   return (
     <Box className="moreWrapper">
       <Box className="moreContent">
@@ -44,7 +48,12 @@ const More = () => {
           are equipped to handle it all.
         </Typography>
       </Box>
-      <GenericButton title="Contact Sales" style={buttonStyles} />
+      <GenericButton
+        title="Contact Sales"
+        style={buttonStyles}
+        onClick={() => setOpen(true)}
+      />
+      <DialogContactSales open={open} setOpen={setOpen} />
     </Box>
   );
 };

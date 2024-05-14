@@ -3,15 +3,19 @@ import { Button } from "@mui/material";
 import { Link } from "gatsby";
 import "./styles.scss"; // Ensure this path is correct for your project structure
 
-const GenericButton = ({ title, style, link }) => {
+const GenericButton = ({ title, style, link, onClick = () => {} }) => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+    <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
       <Link
         to={link}
         target="_blank"
-        style={{ textDecoration: "none", display: 'inline-block' }} // Makes the link itself inline-block
+        style={{ textDecoration: "none", display: "inline-block" }} // Makes the link itself inline-block
       >
-        <Button className="genericButton" sx={{ ...style, margin: 'auto' }}>
+        <Button
+          className="genericButton"
+          sx={{ ...style, margin: "auto" }}
+          onClick={onClick}
+        >
           {title}
         </Button>
       </Link>
@@ -20,5 +24,3 @@ const GenericButton = ({ title, style, link }) => {
 };
 
 export default GenericButton;
-
-

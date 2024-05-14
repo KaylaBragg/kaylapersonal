@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 // MUI Components
 import { Box, Button, Typography } from "@mui/material";
+
+// Contact sales modal
+import DialogContactSales from "../../../General/DialogContactSales";
 
 // styles
 import "./styles.scss";
 import { StaticImage } from "gatsby-plugin-image";
 
 const PricingCard = ({ plan }) => {
+  const [open, setOpen] = useState(false);
   return (
     <Box className="pricingCardsWrapper">
       {/* first Card */}
@@ -362,12 +366,10 @@ const PricingCard = ({ plan }) => {
               Enterprise
             </Typography>
           </Box>
-          <Button
-            href="https://app.openletterconnect.com/signup"
-            className="nonActive salesBtn"
-          >
+          <Button className="nonActive salesBtn" onClick={() => setOpen(true)}>
             Contact Sales
           </Button>
+          <DialogContactSales open={open} setOpen={setOpen} />
         </Box>
         <Box className="featureSection">
           <Typography variant="h4">Product Features</Typography>

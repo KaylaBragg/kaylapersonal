@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 // MUI Components
 import { Box, Typography } from "@mui/material";
 import GenericButton from "../../General/Button";
+
+// Contact sales modal
+import DialogContactSales from "../../General/DialogContactSales";
 
 // styles
 import "./styles.scss";
@@ -49,6 +52,7 @@ const contactStyles = {
 };
 
 const Strategy = () => {
+  const [open, setOpen] = useState(false);
   return (
     <Box className="strategyWrapper">
       <Box className="strategyContent">
@@ -64,7 +68,12 @@ const Strategy = () => {
             style={buttonStyles}
             link="https://demo.openletterconnect.com/signup"
           />
-          <GenericButton title="Contact Sales" style={contactStyles} />
+          <GenericButton
+            title="Contact Sales"
+            style={contactStyles}
+            onClick={() => setOpen(true)}
+          />
+          <DialogContactSales open={open} setOpen={setOpen} />
         </Box>
       </Box>
     </Box>
