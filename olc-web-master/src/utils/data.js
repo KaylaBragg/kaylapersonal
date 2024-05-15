@@ -337,7 +337,43 @@ const productFeatures = [
       <img src={Icon} alt="icon" />
     </Box>
   ),
-  createData("Stored Custom Templates", 10, 20, 50, "Unlimited"),
+  createData(
+    "Stored Custom Templates",
+    "Unlimited",
+    "Unlimited",
+    "Unlimited",
+    "Unlimited"
+  ),
+  createData(
+    "Mail Tracking",
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>
+  ),
+  createData(
+    "Integrations (Zapier/CRM)",
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>
+  ),
   createData(
     "API Keys (Test and Live)",
     <Box className="iconWrapper">
@@ -357,7 +393,7 @@ const productFeatures = [
   createData("Tags", 3, 20, 50, "Unlimited"),
   createData("Custom Fields", 3, 10, 25, "Unlimited"),
   createData(
-    "Mailing History",
+    "Variable Data",
     <Box className="iconWrapper">
       <img src={Icon} alt="icon" />
     </Box>,
@@ -372,7 +408,82 @@ const productFeatures = [
     </Box>
   ),
   createData(
-    "Mail Tracking",
+    "Bulk Contacts Export",
+    <Box className="iconWrapper">
+      <img src={CrossIcon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>
+  ),
+  createData(
+    "Address Verification & Standardization",
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>
+  ),
+  createData(
+    "NCOA (National Change of Address)",
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>
+  ),
+  createData(
+    "Scheduled Mail",
+    <Box className="iconWrapper">
+      <img src={CrossIcon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>
+  ),
+  createData(
+    "Analytics Dashboard",
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>,
+    <Box className="iconWrapper">
+      <img src={Icon} alt="icon" />
+    </Box>
+  ),
+  createData(
+    "Mailing History",
     <Box className="iconWrapper">
       <img src={Icon} alt="icon" />
     </Box>,
@@ -417,41 +528,11 @@ const productFeatures = [
     </Box>
   ),
   createData(
-    "Variable Data",
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>
-  ),
-  createData(
     "Bulk Contacts Import (per month)",
     "None",
     "Up to 10,000",
     "Up to 100,000",
     "Unlimited"
-  ),
-  createData(
-    "Bulk Contacts Export",
-    <Box className="iconWrapper">
-      <img src={CrossIcon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>
   ),
   createData(
     "Address Verification",
@@ -470,21 +551,6 @@ const productFeatures = [
   ),
   createData(
     "Address Standardization",
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>
-  ),
-  createData(
-    "NCOA (National Change of Address)",
     <Box className="iconWrapper">
       <img src={Icon} alt="icon" />
     </Box>,
@@ -562,30 +628,8 @@ const products = [
   ),
   createData(
     "Real Penned Letters",
-    "None",
-    "Up to 10,000",
-    "Up to 100,000",
-    "Unlimited"
-  ),
-  createData(
-    "Integrations (Zapier/CRM)",
     <Box className="iconWrapper">
       <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>
-  ),
-  createData(
-    "Scheduled Mail",
-    <Box className="iconWrapper">
-      <img src={CrossIcon} alt="icon" />
     </Box>,
     <Box className="iconWrapper">
       <img src={Icon} alt="icon" />
@@ -599,21 +643,6 @@ const products = [
   ),
   createData(
     "User Roles & Permissions",
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>
-  ),
-  createData(
-    "Analytics Dashboard",
     <Box className="iconWrapper">
       <img src={Icon} alt="icon" />
     </Box>,
