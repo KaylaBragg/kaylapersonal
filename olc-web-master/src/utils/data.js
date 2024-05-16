@@ -482,88 +482,6 @@ const productFeatures = [
       <img src={Icon} alt="icon" />
     </Box>
   ),
-  createData(
-    "Mailing History",
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>
-  ),
-  createData(
-    "Template Editor",
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>
-  ),
-  createData(
-    "HTML Templates",
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>
-  ),
-  createData(
-    "Bulk Contacts Import (per month)",
-    "None",
-    "Up to 10,000",
-    "Up to 100,000",
-    "Unlimited"
-  ),
-  createData(
-    "Address Verification",
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>
-  ),
-  createData(
-    "Address Standardization",
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>
-  ),
 ];
 const products = [
   createData(
@@ -628,21 +546,6 @@ const products = [
   ),
   createData(
     "Real Penned Letters",
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>,
-    <Box className="iconWrapper">
-      <img src={Icon} alt="icon" />
-    </Box>
-  ),
-  createData(
-    "User Roles & Permissions",
     <Box className="iconWrapper">
       <img src={Icon} alt="icon" />
     </Box>,

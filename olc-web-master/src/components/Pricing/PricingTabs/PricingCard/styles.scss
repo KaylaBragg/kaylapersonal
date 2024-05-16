@@ -7,6 +7,10 @@
   border-radius: 18px;
   position: relative;
 
+  &:not(.popular) {
+    border: 1px solid #fab332;
+  }
+
   .packageSection {
     display: flex;
     justify-content: space-between;
